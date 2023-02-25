@@ -1,0 +1,135 @@
+.loading1 {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.loading1 div {
+  position: absolute;
+  border-radius: 5000px;
+  width: 40%;
+  height: 40%;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.loading1 div:nth-child(1) {
+  left: 0;
+  top: 0;
+  background: #052d3d;
+  animation-name: animated1;
+}
+
+.loading1 div:nth-child(2) {
+  right: 0;
+  top: 0;
+  background: #38dc86;
+  animation-name: animated2;
+}
+
+.loading1 div:nth-child(3) {
+  left: 0;
+  bottom: 0;
+  background: #38dc86;
+  animation-name: animated3;
+}
+
+.loading1 div:nth-child(4) {
+  right: 0;
+  bottom: 0;
+  background: #052d3d;
+  animation-name: animated4;
+}
+
+@keyframes animated1 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 60%;
+    top: 0;
+  }
+  50% {
+    left: 60%;
+    top: 60%;
+  }
+  75% {
+    left: 0%;
+    top: 60%;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes animated2 {
+  0% {
+    left: 60%;
+    top: 0;
+  }
+  25% {
+    left: 60%;
+    top: 60%;
+  }
+  50% {
+    left: 0;
+    top: 60%;
+  }
+  75% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 60%;
+    top: 0;
+  }
+}
+
+@keyframes animated3 {
+  0% {
+    left: 0;
+    top: 60%;
+  }
+  25% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 60%;
+    top: 0;
+  }
+  75% {
+    left: 60%;
+    top: 60%;
+  }
+  100% {
+    left: 0%;
+    top: 60%;
+  }
+}
+
+@keyframes animated4 {
+  0% {
+    left: 60%;
+    top: 60%;
+  }
+  25% {
+    left: 0;
+    top: 60%;
+  }
+  50% {
+    left: 0;
+    top: 0;
+  }
+  75% {
+    left: 60%;
+    top: 0;
+  }
+  100% {
+    left: 60%;
+    top: 60%;
+  }
+}
